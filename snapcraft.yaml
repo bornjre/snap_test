@@ -7,9 +7,9 @@ confinement: strict
 
 apps:
   hello:
-    command: hello
+    command: inside/runner-bj.sh
 
 parts:
-  gnu-hello:
-    plugin: autotools
-    source: http://ftp.gnu.org/gnu/hello/hello-2.10.tar.gz
+    get-tar:
+        plugin: dump
+        source: inside.tar.xz

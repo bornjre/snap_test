@@ -8,7 +8,7 @@ confinement: strict
 apps:
   hello:
     command: inside/runner-bj.sh
-
+# lets change the world.
 parts:
     get-tar:
         plugin: dump
